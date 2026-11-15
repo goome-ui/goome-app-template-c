@@ -1,0 +1,8 @@
+build/
+*.o
+*.exe
+my-goome-app
+shots*/
+*.ppm
+.vs/
+.idea/
