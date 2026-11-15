@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/C99-6fdc5f?style=flat-square&logo=c&logoColor=1b1d22&labelColor=6fdc5f" alt="C99">
-  <img src="https://img.shields.io/badge/template-use%20me-1b1d22?style=flat-square&labelColor=6fdc5f" alt="template">
+  <img src="https://goome-ui.github.io/docs/assets/badges/c99.svg" alt="C99">
+  <img src="https://goome-ui.github.io/docs/assets/badges/template-use-me.svg" alt="template">
   <img src="https://img.shields.io/badge/license-GPL--3.0-1b1d22?style=flat-square" alt="GPL-3.0">
 </p>
 
