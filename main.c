@@ -4,7 +4,7 @@
 
 #define APP_NAME "My Goome App"
 
-static int clicks, overlay;
+static int clicks, overlay, shown;
 static double volume = 0.5;
 static double wx, wy = 60, ww = 300, wh;
 
@@ -23,7 +23,10 @@ static void contents(goome_ui *u)
 {
     goome_ui_toggle(u, "Overlay mode", &overlay);
     goome_ui_separator(u);
+    goome_ui_push_color(u, GOOME_S_TEXT, goome_ui_anim_color(u, "hello", shown ? 0xFFF2F4F8 : 0x00F2F4F8, 600, GOOME_EASE_OUT));
     goome_ui_heading(u, "Hello from " APP_NAME);
+    goome_ui_pop(u, 1);
+    shown = 1;
     if (goome_ui_button(u, "Click me")) clicks++;
     goome_ui_label(u, "clicked %d times", clicks);
     goome_ui_slider(u, "Volume", &volume, 0, 1, "%.2f");
